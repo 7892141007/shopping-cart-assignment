@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <div class="logo-sec">
+                <a href="/"><img src='http://localhost:4000/static/images/logo.png' alt='sabka bazaar logo'/></a>
+            </div>
+            <div class="navigation-pages">
+                <a href="/">Home</a>
+                <a href="/products">Products</a>
+            </div>
+            <div class="utilities-sec">
+               <span class="login-utility">
+                  <a href="/login">SignIn</a>
+                  <a href="/register">Register</a>
+               </span>
+               <span class="cart-utility">
+                <a href="/cart"> 
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+               </span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="cart-container">
+       <div class="cart-products">
+           
+       </div>
+       <div class="ads">
+           <img src='../../static/images/lowest-price.png' alt="Lowest Price"/>
+           <p> You Wont find it cheaper anywhere else. </p>
+       </div>
+   
+     <script src="../cart.js"></script>
+</body>
+</html>

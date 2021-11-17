@@ -1,0 +1,134 @@
+$primary-color:  #f1eeee ;
+$buttonsColor: #a81818 ;
+$font-size: 9px;
+
+
+.banner-container{
+    max-width: 800px;
+    position : relative;
+    margin: auto;
+    padding: 5px 10px;
+    .banner{
+        display: none;
+    }
+
+    .prev, .next{
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color: rgba(0,0,0,0.5);
+    }
+    .next{
+        right: 0;
+        border-radius: 3px 0 0 3px;
+       
+    }
+    .prev:hover , .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+    .dot{
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+}
+
+.category-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 10px 8px rgb(122, 121, 121);
+    &:nth-child(2n){
+      flex-direction: row-reverse;  
+    }
+    .image-section{
+        flex: 1;
+        padding: 5px;
+        img{
+            width:200px;
+            height:200px;
+            object-fit: contain;
+        }
+    }
+    .category-description-section{
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5px;
+        button{
+            background-color: $buttonsColor;
+            color: white;
+            padding: 5px;
+            min-width:100px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-container{
+        max-width: 500px;
+    }
+     .category-section{
+         .image-section{
+             padding: 2px;
+             img{
+                 width:  150px;
+                 height: 150px;
+             }
+         }
+         .category-description-section{
+           font-size: 2*$font-size - 5;
+         }
+     }
+}
+
+@media screen and (max-width: 480px ){
+    .banner-container{
+        max-width: 300px;
+    }
+    .category-description-section{
+        font-size: 14px;
+    }
+}
+
+
+

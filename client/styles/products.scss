@@ -1,0 +1,91 @@
+$primary-color:  #f1eeee ;
+$secondaryColor:  rgb(40, 178, 233);
+$linkColor: rgb(26, 17, 17);
+$buttonsColor: #a81818 ;
+$font-size: 18px;
+
+
+.products-page{
+   display: flex;
+   flex-direction: row;
+   width: 80%;
+   margin: 0 auto;
+}
+
+.products-sidenavbar{
+    flex: 1;
+    min-width: 220px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color; 
+    a{  
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        color: $linkColor;
+        padding: 15px;
+        border-bottom: 1px solid black;
+        &:hover{
+            color: $secondaryColor;
+        }
+    }
+}
+
+.products-section{
+    flex: 3;
+    display: flex;
+    width: 110px;
+    height: auto;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.product-item{
+    width: 200px;
+    height: 400px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 0 5px -2px $primary-color;
+    border-bottom: 1px dotted red;
+    img{
+        max-width: 90%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+    h3.product-title{
+        width: 100%;
+        text-align: left;
+    }
+    .product-description{
+        width: 100%;
+        height: 70px;
+        overflow: auto;
+        background-color: $primary-color;
+        font-size: $font-size - 6;
+    }
+    .buy-desc{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            flex: 1;
+            font-size: $font-size - 2;
+        }
+        button{
+            flex:1;
+            background-color: $buttonsColor;
+            color: white;
+            font-size: $font-size - 6;
+            padding: 8px 10px ;
+            cursor: pointer;
+        }
+    }
+
+}

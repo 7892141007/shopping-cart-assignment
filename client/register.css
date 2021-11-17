@@ -1,0 +1,56 @@
+.signup-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 100px 100px 0px 100px;
+}
+
+.signup-description {
+  -webkit-box-flex: 0.4;
+      -ms-flex-positive: 0.4;
+          flex-grow: 0.4;
+  letter-spacing: -0.4px;
+}
+
+.signup-form {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.signup-form form label {
+  text-align: left;
+  padding: 10px 0px;
+  font-size: 15px;
+}
+
+.signup-form form input {
+  border: none;
+  display: block;
+  outline: none;
+  border-bottom: 1px solid black;
+  width: 96%;
+  padding: 10px;
+  margin: 15px 0px;
+  font-size: 18px;
+}
+
+.signup-form form input:focus {
+  border-bottom: 2px solid #28b2e9;
+}
+
+#signup-submit-button {
+  background-color: #a81818;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=register.css.map */

@@ -1,0 +1,53 @@
+$letterSpacing: -0.4px;
+
+.login-utility{
+    padding: 10px;
+    a{
+        padding: 5px;
+    }
+}
+
+.login-page{
+    display: flex;
+    flex-direction: row;
+    padding: 100px 100px 0px 100px;
+}
+
+.login-description{
+    flex-grow: 0.4;
+    letter-spacing: $letterSpacing;
+}
+
+.login-form{
+    flex-grow: 1;
+    form label {
+        text-align: left;
+        padding: 10px 0px;
+        font-size: 15px;
+    }
+    form input {
+        border: none;
+        display: block;
+        outline: none;
+        border-bottom: 1px solid black;
+        width: 96%;
+        padding: 10px;
+        margin: 15px 0px;
+        font-size: 18px;
+    }
+    form input:focus{
+        border-bottom: 2px solid rgb(40, 178, 233);
+    }
+}
+
+#login-submit-button{
+    background-color: rgb(168, 24, 24);
+    color: white;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+
+

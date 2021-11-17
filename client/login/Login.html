@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../login.css">
+    <link rel="stylesheet" href="../global.css">
+    <script src="../login.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <div class="logo-sec">
+                <a href="/"><img src='http://localhost:4000/static/images/logo.png' alt='sabka bazaar logo'/></a>
+            </div>
+            <div class="navigation-pages">
+                <a href="/">Home</a>
+                <a href="/products">Products</a>
+            </div>
+            <div class="utilities-sec">
+               <span class="login-utility">
+                  <a href="/login">SignIn</a>
+                  <a href="/register">Register</a>
+               </span>
+               <span class="cart-utility">
+                <a href="/cart"> 
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+               </span>
+            </div>
+        </nav>
+    </header>
+    <main class="login-page">
+    <section class='login-description'>
+        <h2>Login</h2>
+        <p> Get access to your Orders,Wishlist and Recommendations.</p>
+    </section>
+    <section class="login-form">
+       <form onsubmit="loginHandler()">
+            <label for="userEmail" class="label">Email</label>
+            <input type="email" id="userEmail" placeholder="Email" required />
+            <label for="userPassword" class="label">Password</label>
+            <input type="password" id="userPassword" placeholder="Password" required/>
+            <input type="submit" value="Login" id='login-submit-button'>
+       </form>  
+    </section>
+    </main>
+    <footer>Copyright &copy 2011-2018 Sabka Bazaar Grocery Supplies Pvt Ltd</footer>
+</body>
+</html>

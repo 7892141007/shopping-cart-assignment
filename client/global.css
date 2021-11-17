@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-size: 18px;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+  border-bottom: 1px solid #a5a1a1;
+  -webkit-box-shadow: 0px 0.5px 0px #a5a1a1;
+          box-shadow: 0px 0.5px 0px #a5a1a1;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-nav .logo-sec {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header-nav .navigation-pages {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  padding: 0 0 15px 80px;
+}
+
+.header-nav .navigation-pages a {
+  padding: 5px;
+  color: #504e4e;
+}
+
+.header-nav .utilities-sec {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.header-nav .cart-utility i {
+  color: #a81818;
+  background: #f1eeee;
+}
+
+@media screen and (max-width: 480px) {
+  .navigation-pages {
+    display: none;
+  }
+  .utilities-sec .login-utility {
+    display: none;
+  }
+  .logo-sec a img {
+    width: 100px;
+    height: 70px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+footer {
+  background-color: #f1eeee;
+  padding: 15px 15px 15px 155px;
+}
+/*# sourceMappingURL=global.css.map */
